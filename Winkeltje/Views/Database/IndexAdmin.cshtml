@@ -7,7 +7,6 @@
 
 <div class="sortBar">
     @{
-        int id = 1;
         int countItems = Model.WinkelItems.Count - 2;
         int colspan = countItems / 2;
     }
@@ -46,7 +45,7 @@
             </table>
         </form>
     </div>
-    <div class="sortRight" class="sortBarCheckBoxes">
+    <div class="sortRight sortBarCheckBoxes">
         <table>
             <tr>
                 <th style="text-align: left;">Zoek per naam</th>
@@ -55,7 +54,7 @@
 
                 <td style="text-align:end;">
                     <form asp-controller="Database" asp-action="IndexSearchAdmin" method="post">
-                        <input asp-for="@Model.SearchString" class=""></input>&nbsp;
+                        <input asp-for="@Model.SearchString" class=""></>&nbsp;
                         <input type="submit" value="Zoek" class="btn btn-dark" />&nbsp;
                     </form>
                 </td>

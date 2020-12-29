@@ -54,11 +54,11 @@ namespace DAL.EF
                     context.Database.EnsureDeleted();
                 // Create database and initial data if needed
                 if (context.Database.EnsureCreated())
-                SeedProducts(context);
-                SeedAllergies(context);
-                SeedOpeneningsTijden(context);
-                SeedVakanties(context);
-                SeedCarouselItems(context);
+              //  SeedProducts(context);
+             //   SeedAllergies(context);
+              //  SeedOpeneningsTijden(context);
+              //  SeedVakanties(context);
+              //  SeedCarouselItems(context);
                 hasRunDuringAppExecution = true;
             }
         }
